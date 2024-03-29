@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333; /* Header background color */
+            color: #fff; /* Header text color */
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #fff; /* Header border */
+        }
+        
+        .container {
+            width: 80%; /* Width of the container */
+            margin: 20px auto; /* Center the container */
+        }
+        
+        .column {
+            float: left; /* Float the columns to create side by side layout */
+            width: 50%; /* Set width for each column */
+            border: 2px solid #333; /* Column border */
+            background-color: #f0f0f0; /* Column background color */
+            padding: 20px;
+            box-sizing: border-box; /* Include padding and border in the total width */
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both; /* Clear floats */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <div class="container clearfix">
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget urna nec quam viverra ultricies. Integer volutpat felis sit amet felis iaculis, et tincidunt velit blandit.</p>
+        </div>
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget urna nec quam viverra ultricies. Integer volutpat felis sit amet felis iaculis, et tincidunt velit blandit.</p>
+        </div>
+    </div>
+</body>
+</html>

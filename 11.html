@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey</title>
+</head>
+<body>
+    <h3>Kajal's Company</h3>
+    <form>
+        <div>
+            Name: <input type="text">
+        </div>
+        <div>
+            Phone number: <input type="text">
+        </div>
+        <div>
+            <p>How would you rate the reliability of our software product on a scale of 1 to 5, with 1 being very unreliable and 5 being extremely reliable?</p>
+            <ul type="a">
+                <li><input type="radio" name="reliability" value="1">1</li>
+                <li><input type="radio" name="reliability" value="2">2</li>
+                <li><input type="radio" name="reliability" value="3">3</li>
+                <li><input type="radio" name="reliability" value="4">4</li>
+                <li><input type="radio" name="reliability" value="5">5</li>
+            </ul>
+        </div>
+        <div>
+            <p>Have you encountered any bugs or issues while using our software product?</p>
+            <ul type="a">
+                <li><input type="checkbox" name="bugs" value="yes">Yes</li>
+                <li><input type="checkbox" name="bugs" value="no">No</li>
+                <li><input type="checkbox" name="bugs" value="slightly">Slightly</li>
+            </ul>
+        </div>
+        <div>
+            <p>How would you rate the overall satisfaction with our software product?</p>
+            <select name="overall-satisfaction">
+                <option value="Very Dissatisfied">Very Dissatisfied</option>
+                <option value="Dissatisfied">Dissatisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Satisfied">Satisfied</option>
+            </select>
+        </div>
+        <div>
+            <p>Kindly write something for this company:</p>
+            <textarea name="comments" rows="4" cols="50"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
